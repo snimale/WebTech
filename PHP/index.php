@@ -95,5 +95,6 @@
     $cost += $units * $result[0]["cost-above-threshold"];
     
     header("Content-Type", "application/json");
+    header("Access-Control-Allow-Origin", "*");
     echo json_encode(["cost" => $cost]);
 ?>
