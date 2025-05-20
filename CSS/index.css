@@ -1,0 +1,23 @@
+@import url("");
+
+body {
+  display: inline; /* block/flex/grid */
+  position: sticky;
+  z-index: 0;
+  overflow: hidden;
+  float: right; /* give margin to the floated image and use clear to remove float side ways for the text*/
+  --va1r: red;
+  background-color: var(--va1r);
+}
+
+a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
